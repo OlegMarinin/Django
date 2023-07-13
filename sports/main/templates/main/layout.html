@@ -1,15 +1,17 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title> {% block title %} {% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
   </head>
   <body>
   <aside >
 
   <h1>Навігація</h1>
 <ul>
-<a href="{% url 'home' %}">  <li>Головна </li></a>
+<a  href="{% url 'home' %}">  <li class="mainh3"> <img src="{% static 'main/icons/house.svg'%}" width="32" height="32">  Головна </li></a>
 <a href="{% url 'hadu' %}">  <li>Хаду </li></a>
 <a href="{% url 'contacts' %}">  <li>Контакти </li></a>
 <a href="{% url 'newshome' %}">  <li>Новини </li> </a>

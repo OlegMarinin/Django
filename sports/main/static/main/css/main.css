@@ -12,7 +12,7 @@ aside{
     padding: 1.5%;
     border-right: 10px solid #292929 ;
     }
-.mainh3 {
+aside ul a li {
     color :white;
     font-size: 32px;}
 
@@ -21,6 +21,10 @@ aside{
     width:100%;
 }
 
-.mainh3:hover {
+aside ul a li:hover {
     color:blue;
+}
+aside ul a {
+text-decoration:none;
+list-style-type:none
 }
