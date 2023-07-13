@@ -1,0 +1,19 @@
+{% extends 'main/layout.html' %}
+
+
+{% block content %}
+
+<h1> news</h1>
+{% for el in news%}
+<div class="alert">
+    <h3>{{el.tittle}}</h3>
+    <p> {{el.full_text}}</p>
+
+</div>
+
+
+
+
+{% endfor%}
+
+{% endblock %}
